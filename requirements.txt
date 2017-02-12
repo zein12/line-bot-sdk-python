@@ -2,5 +2,5 @@ requests >= 2.0
 future
 procfile
 web:python manage.py runserver
-web: gunicorn your-app-name.wsgi --log-file -
+web: gunicorn line-bot-sdk-python.wsgi --log-file -
 heroku ps:scale web=1
